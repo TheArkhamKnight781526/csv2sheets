@@ -26,7 +26,7 @@ Please note that the spreadsheet you use must either be **public** or **shared w
 The function takes two parameters: auth and config.
 
 The first parameter, auth, should look like this:
-```
+```js
 {
     email: 'your_service_account_email',
     private_key: 'your_service_account_private_key'
@@ -34,7 +34,7 @@ The first parameter, auth, should look like this:
 ```
 
 And the second parameter, config, should look like this:
-```
+```js
 {
     path: 'path/to/csv'
     id: 'spreadsheet_id'
@@ -44,7 +44,7 @@ And the second parameter, config, should look like this:
 
 ## Example:
 
-```
+```js
 const csv2sheets = require("csv2sheets");
 
 csv2sheets(
