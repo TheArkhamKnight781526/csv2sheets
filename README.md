@@ -21,6 +21,10 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts
 
 Please note that the spreadsheet you use must either be **public** or **shared with your service account email.**
 
+Keep in mind that this package uses the Google Sheets API, and as such the rate limits are 100 requests per 100 seconds. Since this uses the batch update function, one call will count as 1 request. More information on rate limits can be found here:
+
+https://developers.google.com/sheets/api/reference/limits
+
 ## How to use 
 
 The function takes two parameters: auth and config.
